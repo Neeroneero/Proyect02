@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#174b35">
+  <meta name="description" content="FrescoMarket: tu supermercado online.">
+  <title>FrescoMarket | Tu mercado, más fresco</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+  <div class="announcement">
+    <span>✦</span> Frescura y calidad para tu hogar <span>✦</span>
+    <span class="announcement-right">Precios de demostración en Bs.</span>
+  </div>
+
+  <header class="header">
+    <a href="#" class="brand" aria-label="FrescoMarket, inicio">
+      <span class="brand-icon">❋</span>
+      <span>RERE<span class="brand-light">Market</span>
+        <small>FRESCURA PARA TU VIDA</small>
+      </span>
+      <img src="repos/rwby-anime.gif" width="40" height="40" alt="Imagen de animación">
+    </a>
+
+    <form class="search" id="searchForm" role="search">
+      <span>⌕</span>
+      <input id="searchInput" type="search"
+        placeholder="¿Qué necesitas hoy?"
+        aria-label="Buscar productos">
+      <button type="submit">Buscar</button>
+    </form>
+
+    <div class="header-actions">
+      <button class="account-button" id="loginButton">
+        <span class="action-icon">        </span>
+        <span class="action-label"><small>Bienvenido</small><strong id="accountLabel">Iniciar sesión</strong></span>
+      </button>
+      <button class="cart-button" id="cartButton" aria-label="Abrir carrito">
+        <span class="cart-symbol">🛒</span>
+        <span class="action-label"><small>Tu compra</small><strong>Mi carrito</strong></span>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="navigation" aria-label="Categorías principales">
+    <div class="nav-inner">
+      <a href="#categorias">☰ Todas las categorías</a>
+      <a href="#ofertas">Ofertas</a>
+      <a href="#productos">Productos</a>
+      <a href="#beneficios">¿Por qué FrescoMarket?</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="live-dot"></span> TU MERCADO DE CONFIANZA</span>
+        <h1>Lo fresco de hoy.<br><span>Lo mejor para ti.</span></h1>
+        <p>Llena tu hogar de buenos sabores. Encuentra frutas, verduras y tus productos favoritos en un solo lugar.</p>
+        <div class="hero-buttons">
+          <a class="button button-primary" href="#productos">Explorar productos <span>→</span></a>
+          <a class="button button-outline" href="#ofertas">Ver ofertas</a>
+        </div>
+        <div class="hero-note">
+          <span class="mini-avatars">✿ ❋ ✦</span>
+          <span><strong>Calidad en cada elección</strong><small>Una experiencia de compra sencilla</small></span>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="hero-circle"></div>
+        <div class="hero-badge"><span>✦</span><strong>100%</strong><small>BUENA ELECCIÓN</small></div>
+        <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1000&q=85"
+          alt="Variedad de frutas y verduras frescas">
+        <div class="floating-card"><span>🌿</span><span><strong>Frescura que inspira</strong><small>Todos los días</small></span></div>
+      </div>
+      <div class="hero-decoration">FRESCO · NATURAL · CERCANO</div>
+    </section>
+
+    <section class="benefit-strip" id="beneficios">
+      <article><span class="benefit-icon">✿</span><div><strong>Calidad seleccionada</strong><small>Productos para tu hogar</small></div></article>
+      <article><span class="benefit-icon">♡</span><div><strong>Compra sencilla</strong><small>Todo a tu alcance</small></div></article>
+      <article><span class="benefit-icon">◷</span><div><strong>Ahorra tiempo</strong><small>Compra en pocos pasos</small></div></article>
+      <article><span class="benefit-icon">♧</span><div><strong>Variedad para todos</strong><small>Lo que buscas y más</small></div></article>
+    </section>
+
+    <section class="section categories-section" id="categorias">
+      <div class="section-heading">
+        <div><span class="eyebrow">EXPLORA LA TIENDA</span><h2>¿Qué se te antoja?</h2></div>
+        <p>Todo lo que necesitas para cada día.</p>
+      </div>
+      <div class="category-grid" id="categoryGrid">
+        <button class="category-card active" data-category="Todos">
+          <span class="category-emoji">🛍️</span><strong>Todos</strong><small>Ver todo</small>
+        </button>
+        <button class="category-card" data-category="Frutas y verduras">
+          <span class="category-emoji">🥑</span><strong>Frutas y verduras</strong><small>Frescura natural</small>
+        </button>
+        <button class="category-card" data-category="Lácteos">
+          <span class="category-emoji">🥛</span><strong>Lácteos</strong><small>Para cada día</small>
+        </button>
+        <button class="category-card" data-category="Panadería">
+          <span class="category-emoji">🥐</span><strong>Panadería</strong><small>Recién horneado</small>
+        </button>
+        <button class="category-card" data-category="Bebidas">
+          <span class="category-emoji">🧃</span><strong>Bebidas</strong><small>Para refrescarte</small>
+        </button>
+        <button class="category-card" data-category="Despensa">
+          <span class="category-emoji">🍚</span><strong>Despensa</strong><small>Lo indispensable</small>
+        </button>
+        <button class="category-card" data-category="Limpieza">
+          <span class="category-emoji">🧼</span><strong>Limpieza</strong><small>Hogar impecable</small>
+        </button>
+      </div>
+    </section>
+
+    <section class="offer-banner" id="ofertas">
+      <div class="offer-copy">
+        <span class="offer-label">✦ SELECCIÓN ESPECIAL</span>
+        <h2>Pequeños precios,<br>grandes momentos.</h2>
+        <p>Descubre nuestros productos destacados y aprovecha los precios especiales de demostración.</p>
+        <button class="button offer-button" id="offersButton">Descubrir ofertas →</button>
+      </div>
+      <div class="offer-art">
+        <span class="offer-sparkle sparkle-one">✳</span>
+        <span class="offer-sparkle sparkle-two">✦</span>
+        <img src="https://images.unsplash.com/photo-1543168256-418811576931?auto=format&fit=crop&w=700&q=85"
+          alt="Canasta con productos de supermercado">
+        <div class="discount-sticker"><small>OFERTAS</small><strong>TOP</strong><span>DE HOY</span></div>
+      </div>
+    </section>
+
+    <section class="section products-section" id="productos">
+      <div class="section-heading product-heading">
+        <div><span class="eyebrow">NUESTROS FAVORITOS</span><h2 id="productsTitle">Productos destacados</h2></div>
+        <label class="sort-control">Ordenar por
+          <select id="sortSelect">
+            <option value="featured">Destacados</option>
+            <option value="price-asc">Menor precio</option>
+            <option value="price-desc">Mayor precio</option>
+            <option value="name">Nombre A-Z</option>
+          </select>
+        </label>
+      </div>
+      <div class="result-line" id="resultLine">Descubre nuestros productos favoritos.</div>
+      <div class="product-grid" id="productGrid"></div>
+      <div class="empty-state hidden" id="emptyState">
+        <span>🔎</span><h3>No encontramos productos</h3>
+        <p>Prueba con otra búsqueda o categoría.</p>
+        <button class="button button-primary" id="resetButton">Ver todos los productos</button>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="newsletter-icon">✉</div>
+      <div><span class="eyebrow">UN TOQUE DE FRESCURA</span><h2>¡Que las novedades lleguen a ti!</h2><p>Déjanos tu correo para simular una suscripción a nuestras ofertas.</p></div>
+      <form id="newsletterForm"><input type="email" id="newsletterEmail" placeholder="tu@correo.com" required><button type="submit">Suscribirme →</button></form>
+    </section>
+  </main>
+
+  <footer class="footer" id="contacto">
+    <div class="footer-main">
+      <a href="#" class="brand footer-brand"><span class="brand-icon">❋</span><span>Fresco<span class="brand-light">Market</span><small>FRESCURA PARA TU VIDA</small></span></a>
+      <p>Una manera más sencilla y agradable de descubrir los productos que acompañan tu día.</p>
+      <div class="social-links"><a href="#contacto" aria-label="Red social de demostración">f</a><a href="#contacto" aria-label="Red social de demostración">◎</a><a href="#contacto" aria-label="Red social de demostración">in</a></div>
+    </div>
+    <div class="footer-column"><strong>Explorar</strong><a href="#productos">Productos</a><a href="#categorias">Categorías</a><a href="#ofertas">Ofertas</a></div>
+    <div class="footer-column"><strong>Tu cuenta</strong><button id="footerLogin">Iniciar sesión</button><button id="footerCart">Mi carrito</button></div>
+    <div class="footer-column"><strong>Contacto</strong><span>Bolivia</span><span>Atención al cliente</span><a href="mailto:hola@frescomarket.example">hola@frescomarket.example</a></div>
+    <div class="footer-bottom"><span>© <span id="year"></span> FrescoMarket. Proyecto académico de demostración.</span><span>Hecho con frescura ♡</span></div>
+  </footer>
+
+  <div class="overlay hidden" id="overlay"></div>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Carrito de compras" aria-hidden="true">
+    <div class="drawer-header"><div><span class="eyebrow">TU SELECCIÓN</span><h2>Mi carrito <span id="drawerCount">(0)</span></h2></div><button class="close-button" data-close aria-label="Cerrar carrito">×</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-empty" id="cartEmpty"><span>🛒</span><h3>Tu carrito está esperando</h3><p>Agrega tus productos favoritos para comenzar.</p><button class="button button-primary" data-close>Seguir comprando</button></div>
+    <div class="cart-summary" id="cartSummary">
+      <div><span>Subtotal</span><strong id="cartSubtotal">Bs 0,00</strong></div>
+      <div><span>Entrega</span><strong>Por coordinar</strong></div>
+      <div class="total-row"><span>Total estimado</span><strong id="cartTotal">Bs 0,00</strong></div>
+      <small>El pedido es simulado y no genera ningún cobro.</small>
+      <button class="button button-primary checkout-button" id="checkoutButton">Continuar con el pedido →</button>
+    </div>
+  </aside>
+
+  <section class="modal hidden" id="loginModal" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
+    <button class="close-button modal-close" data-close aria-label="Cerrar">×</button>
+    <div class="modal-icon">♙</div><span class="eyebrow">TU ESPACIO FRESCO</span><h2 id="loginTitle">¡Qué bueno verte!</h2>
+    <p>Ingresa tus datos para simular el acceso a tu cuenta.</p>
+    <form id="loginForm" class="modal-form">
+      <label>Tu nombre<input id="loginName" type="text" placeholder="¿Cómo te llamas?" required minlength="2"></label>
+      <label>Correo electrónico<input id="loginEmail" type="email" placeholder="tu@correo.com" required></label>
+      <label>Contraseña<input id="loginPassword" type="password" placeholder="Mínimo 4 caracteres" required minlength="4"></label>
+      <button class="button button-primary full-button" type="submit">Ingresar a mi cuenta →</button>
+    </form>
+    <small class="modal-note">Demo académica: no se crea una cuenta real ni se envían datos.</small>
+  </section>
+
+  <section class="modal hidden" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+    <button class="close-button modal-close" data-close aria-label="Cerrar">×</button>
+    <div class="modal-icon">🧺</div><span class="eyebrow">CASI LO TENEMOS</span><h2 id="checkoutTitle">Completa tu pedido</h2>
+    <p>Déjanos los datos de ejemplo para preparar tu resumen de compra.</p>
+    <form id="checkoutForm" class="modal-form">
+      <label>Nombre completo<input id="customerName" type="text" required minlength="2" placeholder="Nombre y apellido"></label>
+      <label>Teléfono de contacto<input id="customerPhone" type="tel" required minlength="7" placeholder="Número de contacto"></label>
+      <label>Dirección de entrega<input id="customerAddress" type="text" required minlength="5" placeholder="Zona, calle y número"></label>
+      <label>Forma de entrega<select id="deliveryMethod" required><option value="A coordinar">A coordinar</option><option value="Entrega a domicilio (simulada)">Entrega a domicilio (simulada)</option><option value="Recoger en tienda (simulado)">Recoger en tienda (simulado)</option></select></label>
+      <label>Notas adicionales<textarea id="orderNotes" rows="2" placeholder="Indicaciones opcionales"></textarea></label>
+      <div class="checkout-total"><span>Total estimado</span><strong id="checkoutTotal">Bs 0,00</strong></div>
+      <button class="button button-primary full-button" type="submit">Confirmar pedido simulado ✓</button>
+    </form>
+    <small class="modal-note">No se realiza un pago ni un envío real.</small>
+  </section>
+
+  <section class="modal hidden success-modal" id="successModal" role="dialog" aria-modal="true" aria-labelledby="successTitle">
+    <button class="close-button modal-close" data-close aria-label="Cerrar">×</button>
+    <div class="success-icon">✓</div><span class="eyebrow">PEDIDO REGISTRADO</span><h2 id="successTitle">¡Gracias por elegirnos!</h2>
+    <p id="successMessage">Tu pedido de demostración se ha preparado correctamente.</p>
+    <div class="receipt" id="receipt"></div>
+    <button class="button button-primary full-button" data-close>Volver a la tienda</button>
+  </section>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
